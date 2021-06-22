@@ -5,7 +5,7 @@
   "repository": "zapier-integrated",
   "homepage": "https://zapier.com/developer",
   "author": "Satyam Suman <satyam.suman@factoreal.com>",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --recursive"
