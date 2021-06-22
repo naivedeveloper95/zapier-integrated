@@ -1,10 +1,10 @@
 {
-  "name": "github-example-app",
+  "name": "zapier-example-app",
   "version": "1.0.0",
   "description": "An example app for the Zapier platform.",
-  "repository": "zapier/zapier-platform-app-github-example",
+  "repository": "zapier-integrated",
   "homepage": "https://zapier.com/developer",
-  "author": "Zane Lyon <zane.lyon@zapier.com>",
+  "author": "Satyam Suman <satyam.suman@factoreal.com>",
   "license": "BSD-3-Clause",
   "main": "index.js",
   "scripts": {
