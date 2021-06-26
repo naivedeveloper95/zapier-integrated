@@ -28,6 +28,8 @@ describe('issue trigger', () => {
     };
     appTester(App.triggers.issue.operation.perform, bundle)
       .then((response) => {
+        console.log("Response from github.");
+        console.log(response);
         response.should.be.an.instanceOf(Array);
         done();
       })
@@ -48,7 +50,8 @@ describe('issue trigger', () => {
     };
     appTester(App.creates.issue.operation.perform, bundle)
       .then((response) => {
-
+        console.log("Response from github.");
+        console.log(response);
         done();
       })
       .catch(done => console.log(done));

@@ -24,6 +24,8 @@ describe('basic authentication', () => {
 
     appTester(App.authentication.test, bundle)
       .then((response) => {
+        console.log("Response from github.");
+        console.log(response);
         should.exist(response.login);
         done();
       })

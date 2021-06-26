@@ -24,6 +24,8 @@ describe('repo trigger', () => {
     };
     appTester(App.triggers.repo.operation.perform, bundle)
       .then((response) => {
+        console.log("Response from github.");
+        console.log(response);
         response.should.be.an.instanceOf(Array);
         done();
       })
