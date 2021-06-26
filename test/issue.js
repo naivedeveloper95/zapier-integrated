@@ -6,7 +6,7 @@ const zapier = require('zapier-platform-core');
 const App = require('../index');
 const appTester = zapier.createAppTester(App);
 
-const REPO = 'username/reponame' // CHANGE THIS
+const REPO = 'naivedeveloper95/node-twilio-integration' // CHANGE THIS
 
 //These are automated tests for the Issue create and Issue Trigger.
 //They will run every time the `zapier test` command is executed.
@@ -31,7 +31,7 @@ describe('issue trigger', () => {
         response.should.be.an.instanceOf(Array);
         done();
       })
-      .catch(done);
+      .catch(done => console.log(done));
   });
 
   it('should create an issue', (done) => {
@@ -51,6 +51,6 @@ describe('issue trigger', () => {
 
         done();
       })
-      .catch(done);
+      .catch(done => console.log(done));
   });
 });

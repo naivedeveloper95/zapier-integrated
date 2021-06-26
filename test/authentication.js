@@ -15,6 +15,7 @@ describe('basic authentication', () => {
 
   it('should authenticate', (done) => {
     const bundle = {
+      withCredentials: true,
       authData: {
         username: process.env.TEST_USERNAME,
         password: process.env.TEST_PASSWORD
@@ -26,7 +27,7 @@ describe('basic authentication', () => {
         should.exist(response.login);
         done();
       })
-      .catch(done);
+      .catch((done) => console.log(done));
   });
 
 });

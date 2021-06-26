@@ -27,6 +27,6 @@ describe('repo trigger', () => {
         response.should.be.an.instanceOf(Array);
         done();
       })
-      .catch(done);
+      .catch(done => console.log(done));
   });
 });

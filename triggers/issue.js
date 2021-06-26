@@ -26,9 +26,9 @@ module.exports = {
 
   operation: {
     inputFields: [
-      {key: 'repo', label:'Repo', required: true, dynamic: 'repo.full_name.full_name'},
-      {key:'filter', required: false, label: 'Filter', choices: {assigned:'assigned',created:'created',mentioned:'mentioned',subscribed:'subscribed',all:'all'}, helpText:'Default is "assigned"'},
-      {key:'state', required: false, label: 'State', choices: {open:'open',closed:'closed',all:'all'}, helpText:'Default is "open"'}
+      { key: 'repo', label: 'Repo', required: true, dynamic: 'repo.full_name.full_name' },
+      { key: 'filter', required: false, label: 'Filter', choices: { assigned: 'assigned', created: 'created', mentioned: 'mentioned', subscribed: 'subscribed', all: 'all' }, helpText: 'Default is "assigned"' },
+      { key: 'state', required: false, label: 'State', choices: { open: 'open', closed: 'closed', all: 'all' }, helpText: 'Default is "open"' }
     ],
     perform: triggerIssue,
 
